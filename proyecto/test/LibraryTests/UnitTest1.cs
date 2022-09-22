@@ -1,4 +1,5 @@
 namespace LibraryTests;
+using Library;
 
 public class Tests
 {
@@ -8,8 +9,11 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public void EsImpar3()
     {
-        Assert.Pass();
+        Paraimeter test = new Paraimeter();
+        bool resultado = test.Impar(7);
+
+        Assert.AreEqual(true, resultado);
     }
 }
